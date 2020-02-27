@@ -50,7 +50,7 @@ export const addInterleaveExtension = (source, { debug }) => {
         ? Template.asString([
             "console.log({",
             Template.indent([
-              "chunkBelongsToThisBuild: compilationHash === options.hash",
+              "chunkBelongsToThisBuild: compilationHash === options.hash,",
               "chunkCompileHash: options.hash,",
               "chunkDependencyKeys: chunkDependencyKeys,",
               "chunkModuleHashMap: chunkModuleHashMap,",
@@ -98,7 +98,7 @@ export const addInterleaveExtension = (source, { debug }) => {
             // loop over css chunks attached to a chunk
             "cssChunks.forEach(function(styleChunk){",
             debug
-              ? "console.log('CSS', styleChunk, 'is missing from host build. Will download);"
+              ? "console.log('CSS', styleChunk, 'is missing from host build. Will download');"
               : "",
             Template.indent(["chunkPromise(styleChunk)"]),
             "});"
