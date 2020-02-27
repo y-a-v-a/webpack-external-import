@@ -82,7 +82,7 @@
     "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-react": "7.18.3",
     "eslint-plugin-react-hooks": "1.7.0",
-    "flow-bin": "0.119.0",
+    "flow-bin": "0.119.1",
     "html-webpack-plugin": "3.2.0",
     "jest": "25.1.0",
     "jest-haste-map": "25.1.0",
@@ -130,7 +130,8 @@
     "fs-extra": "^8.1.0",
     "loadjs": "^4.2.0",
     "mem": "^6.0.1",
-    "pkg-up": "^3.1.0"
+    "pkg-up": "^3.1.0",
+    "tapable": "^1.1.3"
   },
   "config": {
     "commitizen": {
